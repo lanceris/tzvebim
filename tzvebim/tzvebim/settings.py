@@ -135,8 +135,6 @@ AUTHENTICATION_BACKENDS = (
 )
 
 LOGIN_REDIRECT_URL = reverse_lazy('index')
-LOGIN_URL = reverse_lazy('login')
-LOGOUT_URL = reverse_lazy('logout')
 
 
 SOCIAL_AUTH_VK_OAUTH2_KEY = '6171124'
