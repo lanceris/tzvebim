@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5ei7y1hlct()l54%h5s*fh1*80-===&bh5%h=m1==!dg@_=y_*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['mysite.com']
+ALLOWED_HOSTS = ['mysite.com', 'lanceris.pythonanywhere.com']
 
 
 # Application definition
@@ -121,13 +121,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn')
 STATIC_URL = '/static/'
+
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
+print(STATICFILES_DIRS)
 #python-social-auth settings
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.vk.VKOAuth2',
