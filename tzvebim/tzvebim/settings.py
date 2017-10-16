@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5ei7y1hlct()l54%h5s*fh1*80-===&bh5%h=m1==!dg@_=y_*'
+SECRET_KEY = '5ei7y1gej5e3t()l54%h5s*fh1*80-===&bh5%h=m1==!dg@_=y_*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mysite.com', 'lanceris.pythonanywhere.com']
+ALLOWED_HOSTS = ['lanceris.pythonanywhere.com']
 
 
 # Application definition
@@ -137,6 +137,6 @@ AUTHENTICATION_BACKENDS = (
 LOGIN_REDIRECT_URL = reverse_lazy('index')
 
 
-SOCIAL_AUTH_VK_OAUTH2_KEY = '6171124'
-SOCIAL_AUTH_VK_OAUTH2_SECRET = 'eX4n3PND3XLl6aH5F1jP'
+SOCIAL_AUTH_VK_OAUTH2_KEY = ''
+SOCIAL_AUTH_VK_OAUTH2_SECRET = ''
 SOCIAL_AUTH_VK_OAUTH2_SCOPE = ['friends']
