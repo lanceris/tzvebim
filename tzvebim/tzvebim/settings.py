@@ -128,7 +128,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-print(STATICFILES_DIRS)
 #python-social-auth settings
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.vk.VKOAuth2',
